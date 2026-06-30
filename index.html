@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+
+<html lang="th">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport"/>
+<title>หนูพยาบาล Quiz · Head to Toe</title>
+
+<link href="style.css" rel="stylesheet"/></head>
+<body>
+<div class="stage">
+<div class="mascot-row">
+<span style="font-size:26px;">🩺</span>
+<span class="title">Head to toe quiz</span>
+<span style="font-size:26px;">🌸</span>
+<button aria-label="เปิด/ปิดเสียง" class="sound-toggle" id="soundToggle">🔊</button>
+</div>
+<div id="introScreen">
+<div class="lesson-panel">
+<span class="heart-deco">💗</span>
+<div class="q-badge">📖 อ่านก่อนเริ่มทำ Quiz</div>
+<h2 class="lesson-title">เสียงต่างๆ จากการตรวจร่างกาย</h2>
+<div class="lesson-section">
+<div class="lesson-head"><span class="lesson-emoji">🩺</span>1. เสียงจากการฟังด้วยหูฟังแพทย์ (Auscultation)</div>
+<div class="lesson-card">
+<div class="lesson-card-head"><span>🫁</span>เสียงจากปอด (Lung sounds)</div>
+<p class="lesson-sub">เสียงปกติ</p>
+<ul class="lesson-list">
+<li><b>Vesicular</b> หายใจเข้ายาว ออกสั้นเบา ได้ยินทั่วเนื้อปอดปกติ</li>
+<li><b>Bronchial</b> เสียงดังแหลม ออกยาวกว่าเข้า ได้ยินใกล้หลอดลมใหญ่</li>
+</ul>
+<p class="lesson-sub">เสียงผิดปกติ</p>
+<ul class="lesson-list">
+<li><b>Crepitation / Crackles</b> กรอบแกรบคล้ายผมเสียดสี มีน้ำ/เสมหะในถุงลม</li>
+<li><b>Wheezing</b> วี้ดแหลมสูง หลอดลมตีบแคบ เช่นหอบหืด</li>
+<li><b>Rhonchi</b> เสียงกรนทุ้มต่ำ เสมหะเหนียวในหลอดลมใหญ่</li>
+<li><b>Stridor</b> ฮึดแหลมตอนหายใจเข้า อุดกั้นทางเดินหายใจส่วนบน ⚠️ ภาวะฉุกเฉิน</li>
+</ul>
+</div>
+<div class="lesson-card">
+<div class="lesson-card-head"><span>🫀</span>เสียงจากหัวใจ (Heart sounds)</div>
+<p class="lesson-sub">เสียงปกติ</p>
+<ul class="lesson-list">
+<li><b>S₁</b> เสียง "ลุบ" ลิ้นไมตรัล/ไตรคัสปิดปิดตัว</li>
+<li><b>S₂</b> เสียง "ดุบ" ลิ้นเอออร์ติก/พูลโมนาริกปิดตัว</li>
+</ul>
+<p class="lesson-sub">เสียงผิดปกติ</p>
+<ul class="lesson-list">
+<li><b>Murmur</b> เสียงฟู่ เลือดไหลปั่นป่วน บ่งชี้ลิ้นหัวใจรั่ว/ตีบ</li>
+<li><b>Gallop (S₃/S₄)</b> จังหวะคล้ายม้าควบ บ่งชี้หัวใจล้มเหลว</li>
+</ul>
+</div>
+<div class="lesson-card">
+<div class="lesson-card-head"><span>🫃</span>เสียงจากลำไส้ (Bowel sounds)</div>
+<p class="lesson-sub">เสียงปกติ</p>
+<ul class="lesson-list">
+<li>เสียงโครกคราก (Gurgling) 5–30 ครั้ง/นาที จากการบีบตัวของลำไส้</li>
+</ul>
+<p class="lesson-sub">เสียงผิดปกติ</p>
+<ul class="lesson-list">
+<li><b>Hyperactive</b> ดังถี่มาก ท้องเสีย/ลำไส้อุดตันระยะแรก</li>
+<li><b>Hypoactive / Absent</b> เงียบหรือนานๆ ได้ยินที ลำไส้เป็นอัมพาต/หลังผ่าตัดใหญ่</li>
+</ul>
+</div>
+</div>
+<div class="lesson-section">
+<div class="lesson-head"><span class="lesson-emoji">👆</span>2. เสียงจากการเคาะร่างกาย (Percussion)</div>
+<div class="lesson-card">
+<div class="table-scroll">
+<table class="lesson-table">
+<tr><th>เสียงเคาะ</th><th>อวัยวะปกติ</th><th>ความหมายถ้าผิดที่</th></tr>
+<tr><td>Resonance<br/><span class="lesson-thai">(โปร่ง)</span></td><td>เนื้อปอดปกติ</td><td>มาตรฐานปอดสุขภาพดี</td></tr>
+<tr><td>Hyperresonance<br/><span class="lesson-thai">(โปร่งเกินไป)</span></td><td>ไม่พบในคนปกติ</td><td>ลมเกินในช่องอก เช่น ถุงลมโป่งพอง</td></tr>
+<tr><td>Tympany<br/><span class="lesson-thai">(คล้ายกลอง)</span></td><td>กระเพาะ/ลำไส้</td><td>ถ้าพบในช่องอก = ลมรั่วในปอดรุนแรง</td></tr>
+<tr><td>Dullness<br/><span class="lesson-thai">(ทึบ)</span></td><td>ตับ/ม้าม/หัวใจ</td><td>ถ้าพบในปอด = มีน้ำในช่องปอด/ปอดแฟบ</td></tr>
+<tr><td>Flatness<br/><span class="lesson-thai">(ทึบสนิท)</span></td><td>กล้ามเนื้อ/กระดูก</td><td>ถ้าพบในช่องท้อง/อก = ก้อนเนื้อขนาดใหญ่</td></tr>
+</table>
+</div>
+</div>
+</div>
+<div class="start-row">
+<button class="next-btn show" id="startBtn">เริ่มทำ Quiz 🚀</button>
+</div>
+</div>
+</div>
+<div id="quizScreen" style="display:none;">
+<div class="top-bar">
+<div class="pill score" id="scorePill">⭐ 0/3</div>
+<div class="pill timer" id="timerPill">⏰ 30</div>
+</div>
+<div class="progress-track"><div class="progress-fill" id="progressFill"></div></div>
+<div class="panel" id="panel">
+<span class="heart-deco">💗</span>
+<div class="q-badge" id="qBadge">🩹 ข้อ 1 จาก 3</div>
+<div class="q-text" id="qText"></div>
+<div class="answers" id="answers"></div>
+<div class="feedback-box" id="feedbackBox">
+<div class="fb-title" id="fbTitle"></div>
+<div id="fbBody"></div>
+</div>
+<div class="next-row">
+<button class="next-btn" id="nextBtn">ข้อถัดไป →</button>
+</div>
+</div>
+</div>
+</div>
+
+<script src="script.js"></script></body>
+</html>
